@@ -21,7 +21,7 @@ Run the full local development environment from the project root:
 base44 dev
 ```
 
-`base44 dev` starts the local Base44 development backend and, when this app is configured for it, also starts the frontend dev server for you. Use the frontend URL printed by the command.
+`base44 dev` starts the local Base44 development backend and, when this app is configured for it, also starts the frontend dev server (`npm run dev`) for you. Use the frontend URL printed by the command.
 
 For example, when the Base44 project config includes a `serveCommand`, `base44 dev` can launch the frontend too:
 
@@ -43,20 +43,20 @@ If you only want to work on the frontend against the hosted Base44 backend, run:
 npm run dev
 ```
 
-Open the local URL printed by Vite.
+Open the local URL printed by Next.js.
 
 ## Use The Hosted Backend
 
 For frontend-only development, create or update `.env.local` in the project root:
 
 ```bash
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=https://your-app.base44.app
+NEXT_PUBLIC_BASE44_APP_ID=your_app_id
+NEXT_PUBLIC_BASE44_APP_BASE_URL=https://your-app.base44.app
 ```
 
-`VITE_BASE44_APP_ID` identifies the Base44 app.
+`NEXT_PUBLIC_BASE44_APP_ID` identifies the Base44 app.
 
-`VITE_BASE44_APP_BASE_URL` tells the Base44 Vite plugin where to send local `/api` requests. Point it at your deployed Base44 app URL when you want the local frontend to use the hosted backend.
+`NEXT_PUBLIC_BASE44_APP_BASE_URL` points local frontend requests at your deployed Base44 app URL when you want the local frontend to use the hosted backend.
 
 When you use `base44 dev`, the command injects the local Base44 values for you, so `.env.local` is mainly needed for frontend-only workflows.
 
