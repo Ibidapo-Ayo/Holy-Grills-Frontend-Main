@@ -13,6 +13,7 @@ import CookieConsent from '@/components/CookieConsent';
 import RequireAuth from '@/components/RequireAuth';
 import { SoundProvider } from '@/lib/SoundProvider';
 import ErrorBoundary from '@/components/ErrorBoundary';
+import ServiceWorkerRegistration from '@/components/ServiceWorkerRegistration';
 
 // Eager imports — instant navigation with no per-route Suspense spinner.
 import Home from '@/pages/Home';
@@ -114,6 +115,7 @@ function App() {
                 <AppRoutes />
                 <InstallPrompt />
                 <CookieConsent />
+                <ServiceWorkerRegistration />
               </HolyGrillProvider>
             </SoundProvider>
           </Router>
