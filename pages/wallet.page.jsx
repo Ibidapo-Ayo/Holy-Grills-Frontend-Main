@@ -1,3 +1,5 @@
-import WalletPage from '@/pages/Wallet';
+import dynamic from 'next/dynamic';
 
-export default WalletPage;
+const Page = dynamic(() => import('@/pages/Wallet'), { ssr: false });
+
+export default Page;

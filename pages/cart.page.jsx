@@ -1,3 +1,5 @@
-import CartPage from '@/pages/Cart';
+import dynamic from 'next/dynamic';
 
-export default CartPage;
+const Page = dynamic(() => import('@/pages/Cart'), { ssr: false });
+
+export default Page;

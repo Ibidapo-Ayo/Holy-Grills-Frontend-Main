@@ -1,3 +1,5 @@
-import ResetPasswordPage from '@/pages/ResetPassword';
+import dynamic from 'next/dynamic';
 
-export default ResetPasswordPage;
+const Page = dynamic(() => import('@/pages/ResetPassword'), { ssr: false });
+
+export default Page;

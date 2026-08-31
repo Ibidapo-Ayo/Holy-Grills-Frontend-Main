@@ -1,3 +1,5 @@
-import HallOfFamePage from '@/pages/HallOfFame';
+import dynamic from 'next/dynamic';
 
-export default HallOfFamePage;
+const Page = dynamic(() => import('@/pages/HallOfFame'), { ssr: false });
+
+export default Page;

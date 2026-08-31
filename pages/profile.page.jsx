@@ -1,3 +1,5 @@
-import ProfilePage from '@/pages/Profile';
+import dynamic from 'next/dynamic';
 
-export default ProfilePage;
+const Page = dynamic(() => import('@/pages/Profile'), { ssr: false });
+
+export default Page;

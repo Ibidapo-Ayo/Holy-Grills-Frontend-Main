@@ -1,3 +1,5 @@
-import MenuPage from '@/pages/Menu';
+import dynamic from 'next/dynamic';
 
-export default MenuPage;
+const Page = dynamic(() => import('@/pages/Menu'), { ssr: false });
+
+export default Page;

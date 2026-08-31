@@ -1,3 +1,5 @@
-import EventDetailPage from '@/pages/EventDetail';
+import dynamic from 'next/dynamic';
 
-export default EventDetailPage;
+const Page = dynamic(() => import('@/pages/EventDetail'), { ssr: false });
+
+export default Page;

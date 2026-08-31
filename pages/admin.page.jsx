@@ -1,3 +1,5 @@
-import AdminPage from '@/pages/Admin';
+import dynamic from 'next/dynamic';
 
-export default AdminPage;
+const Page = dynamic(() => import('@/pages/Admin'), { ssr: false });
+
+export default Page;

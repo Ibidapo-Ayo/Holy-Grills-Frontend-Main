@@ -1,3 +1,5 @@
-import AddressesPage from '@/pages/Addresses';
+import dynamic from 'next/dynamic';
 
-export default AddressesPage;
+const Page = dynamic(() => import('@/pages/Addresses'), { ssr: false });
+
+export default Page;

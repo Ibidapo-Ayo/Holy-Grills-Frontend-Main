@@ -1,3 +1,5 @@
-import FAQPage from '@/pages/FAQ';
+import dynamic from 'next/dynamic';
 
-export default FAQPage;
+const Page = dynamic(() => import('@/pages/FAQ'), { ssr: false });
+
+export default Page;

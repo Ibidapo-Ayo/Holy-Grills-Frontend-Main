@@ -1,3 +1,5 @@
-import OurStoryPage from '@/pages/OurStory';
+import dynamic from 'next/dynamic';
 
-export default OurStoryPage;
+const Page = dynamic(() => import('@/pages/OurStory'), { ssr: false });
+
+export default Page;

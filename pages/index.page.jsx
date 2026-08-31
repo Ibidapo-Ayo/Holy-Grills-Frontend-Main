@@ -1,3 +1,5 @@
-import HomePage from '@/pages/Home';
+import dynamic from 'next/dynamic';
 
-export default HomePage;
+const Page = dynamic(() => import('@/pages/Home'), { ssr: false });
+
+export default Page;

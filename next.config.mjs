@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 const nextConfig = {
   pageExtensions: ['page.js', 'page.jsx', 'page.ts', 'page.tsx'],
   webpack: (config) => {
-    config.resolve.alias['react-router-dom'] = fileURLToPath(new URL('./src/lib/react-router-dom-next.js', import.meta.url));
+    config.resolve.alias['react-router-dom'] = fileURLToPath(new URL('./src/lib/react-router-dom-next.jsx', import.meta.url));
     return config;
   },
 };

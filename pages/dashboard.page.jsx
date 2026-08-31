@@ -1,3 +1,5 @@
-import DashboardPage from '@/pages/Dashboard';
+import dynamic from 'next/dynamic';
 
-export default DashboardPage;
+const Page = dynamic(() => import('@/pages/Dashboard'), { ssr: false });
+
+export default Page;

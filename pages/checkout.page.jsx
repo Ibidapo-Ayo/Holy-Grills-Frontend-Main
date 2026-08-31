@@ -1,3 +1,5 @@
-import CheckoutPage from '@/pages/Checkout';
+import dynamic from 'next/dynamic';
 
-export default CheckoutPage;
+const Page = dynamic(() => import('@/pages/Checkout'), { ssr: false });
+
+export default Page;

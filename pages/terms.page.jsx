@@ -1,3 +1,5 @@
-import TermsPrivacyPage from '@/pages/TermsPrivacy';
+import dynamic from 'next/dynamic';
 
-export default TermsPrivacyPage;
+const Page = dynamic(() => import('@/pages/TermsPrivacy'), { ssr: false });
+
+export default Page;

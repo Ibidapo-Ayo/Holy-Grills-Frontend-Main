@@ -1,3 +1,5 @@
-import ReferralsPage from '@/pages/Referrals';
+import dynamic from 'next/dynamic';
 
-export default ReferralsPage;
+const Page = dynamic(() => import('@/pages/Referrals'), { ssr: false });
+
+export default Page;

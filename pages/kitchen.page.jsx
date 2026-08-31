@@ -1,3 +1,5 @@
-import KitchenPage from '@/pages/Kitchen';
+import dynamic from 'next/dynamic';
 
-export default KitchenPage;
+const Page = dynamic(() => import('@/pages/Kitchen'), { ssr: false });
+
+export default Page;

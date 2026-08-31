@@ -1,3 +1,5 @@
-import LoginPage from '@/pages/Login';
+import dynamic from 'next/dynamic';
 
-export default LoginPage;
+const Page = dynamic(() => import('@/pages/Login'), { ssr: false });
+
+export default Page;

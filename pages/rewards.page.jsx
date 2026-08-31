@@ -1,3 +1,5 @@
-import RewardsPage from '@/pages/Rewards';
+import dynamic from 'next/dynamic';
 
-export default RewardsPage;
+const Page = dynamic(() => import('@/pages/Rewards'), { ssr: false });
+
+export default Page;

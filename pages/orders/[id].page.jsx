@@ -1,3 +1,5 @@
-import OrderDetailPage from '@/pages/OrderDetail';
+import dynamic from 'next/dynamic';
 
-export default OrderDetailPage;
+const Page = dynamic(() => import('@/pages/OrderDetail'), { ssr: false });
+
+export default Page;

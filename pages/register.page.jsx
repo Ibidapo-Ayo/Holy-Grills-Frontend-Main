@@ -1,3 +1,5 @@
-import RegisterPage from '@/pages/Register';
+import dynamic from 'next/dynamic';
 
-export default RegisterPage;
+const Page = dynamic(() => import('@/pages/Register'), { ssr: false });
+
+export default Page;

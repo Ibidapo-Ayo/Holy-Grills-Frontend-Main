@@ -1,3 +1,5 @@
-import OrderLocksPage from '@/pages/OrderLocks';
+import dynamic from 'next/dynamic';
 
-export default OrderLocksPage;
+const Page = dynamic(() => import('@/pages/OrderLocks'), { ssr: false });
+
+export default Page;

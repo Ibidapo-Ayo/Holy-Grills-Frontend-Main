@@ -1,3 +1,5 @@
-import RiderPage from '@/pages/Rider';
+import dynamic from 'next/dynamic';
 
-export default RiderPage;
+const Page = dynamic(() => import('@/pages/Rider'), { ssr: false });
+
+export default Page;

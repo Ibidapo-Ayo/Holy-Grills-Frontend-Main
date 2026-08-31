@@ -1,3 +1,5 @@
-import StreakPage from '@/pages/Streak';
+import dynamic from 'next/dynamic';
 
-export default StreakPage;
+const Page = dynamic(() => import('@/pages/Streak'), { ssr: false });
+
+export default Page;

@@ -1,3 +1,5 @@
-import MarketplaceDetailPage from '@/pages/MarketplaceDetail';
+import dynamic from 'next/dynamic';
 
-export default MarketplaceDetailPage;
+const Page = dynamic(() => import('@/pages/MarketplaceDetail'), { ssr: false });
+
+export default Page;

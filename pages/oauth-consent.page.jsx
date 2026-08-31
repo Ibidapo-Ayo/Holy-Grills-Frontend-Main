@@ -1,3 +1,5 @@
-import OAuthConsentPage from '@/pages/OAuthConsent';
+import dynamic from 'next/dynamic';
 
-export default OAuthConsentPage;
+const Page = dynamic(() => import('@/pages/OAuthConsent'), { ssr: false });
+
+export default Page;

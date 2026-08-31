@@ -1,3 +1,5 @@
-import HpEducationPage from '@/pages/HpEducation';
+import dynamic from 'next/dynamic';
 
-export default HpEducationPage;
+const Page = dynamic(() => import('@/pages/HpEducation'), { ssr: false });
+
+export default Page;

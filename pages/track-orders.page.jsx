@@ -1,3 +1,5 @@
-import TrackOrdersPage from '@/pages/TrackOrders';
+import dynamic from 'next/dynamic';
 
-export default TrackOrdersPage;
+const Page = dynamic(() => import('@/pages/TrackOrders'), { ssr: false });
+
+export default Page;

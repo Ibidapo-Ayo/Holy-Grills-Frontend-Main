@@ -1,3 +1,5 @@
-import OrderConfirmationPage from '@/pages/OrderConfirmation';
+import dynamic from 'next/dynamic';
 
-export default OrderConfirmationPage;
+const Page = dynamic(() => import('@/pages/OrderConfirmation'), { ssr: false });
+
+export default Page;

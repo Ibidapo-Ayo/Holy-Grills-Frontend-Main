@@ -1,3 +1,5 @@
-import NotificationPreferencesPage from '@/pages/NotificationPreferences';
+import dynamic from 'next/dynamic';
 
-export default NotificationPreferencesPage;
+const Page = dynamic(() => import('@/pages/NotificationPreferences'), { ssr: false });
+
+export default Page;

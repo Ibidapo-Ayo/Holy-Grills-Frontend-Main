@@ -1,3 +1,5 @@
-import LeaderboardPage from '@/pages/Leaderboard';
+import dynamic from 'next/dynamic';
 
-export default LeaderboardPage;
+const Page = dynamic(() => import('@/pages/Leaderboard'), { ssr: false });
+
+export default Page;
