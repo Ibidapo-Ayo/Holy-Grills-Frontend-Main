@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flame, ChevronRight } from 'lucide-react';
 import { useHolyGrill } from '@/lib/HolyGrillContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@/lib/navigation';
 
 /**
  * LoginStreakCard — full-width card shown to authenticated users on the home

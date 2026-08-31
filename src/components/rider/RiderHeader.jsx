@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bike, Power, ExternalLink, LogOut } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 
 export default function RiderHeader({ online, onToggleOnline, onSignOut }) {
   return (

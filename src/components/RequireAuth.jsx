@@ -1,4 +1,4 @@
-import { Navigate, Outlet, useLocation } from 'react-router-dom';
+import { Navigate, Outlet, useLocation } from '@/lib/navigation';
 import { isAuthenticated } from '@/lib/apiClient';
 
 // Gates student account routes behind the Holy Grills JWT. Unauthenticated

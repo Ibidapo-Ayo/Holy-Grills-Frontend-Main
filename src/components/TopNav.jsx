@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from '@/lib/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Flame, ShoppingCart, Bell, User, ChevronDown, Wallet, MapPin, Settings, Gift, LogOut, LayoutDashboard, ClipboardList, Award } from 'lucide-react';
 import { useHolyGrill } from '@/lib/HolyGrillContext';

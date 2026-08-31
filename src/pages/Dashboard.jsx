@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from '@/lib/navigation';
 import { Flame, Wallet as WalletIcon, TrendingUp, Lock, ChevronRight, ShoppingBag, Calendar, Trophy, Users, CheckCircle2, Clock, Timer } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { mockApi } from '@/lib/mockApi';

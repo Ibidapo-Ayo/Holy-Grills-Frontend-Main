@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { Users, ArrowRight, Tag, Truck, Sparkles } from 'lucide-react';
 import { squadOrderMinItems, squadOrderMaxItems, squadOrderDiscountPct, squadDeliveryDiscountPct } from '@/lib/appConfig';
 

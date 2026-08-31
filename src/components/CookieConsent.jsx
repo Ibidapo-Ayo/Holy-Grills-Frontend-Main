@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Cookie, X, Check } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 
 const STORAGE_KEY = 'hg_cookie_consent';
 

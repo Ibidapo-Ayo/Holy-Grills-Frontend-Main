@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { Flame, Mail, Phone, MapPin, Utensils } from 'lucide-react';
 import APP_CONFIG from '@/config/app.config';
 

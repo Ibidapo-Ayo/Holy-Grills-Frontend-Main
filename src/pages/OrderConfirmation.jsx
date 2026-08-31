@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from '@/lib/navigation';
 import { Check, Flame, Package, MapPin, CreditCard, Users, Share2, ChevronRight, Clock } from 'lucide-react';
 import { mockApi } from '@/lib/mockApi';
 import { useHolyGrill } from '@/lib/HolyGrillContext';

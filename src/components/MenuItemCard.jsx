@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { motion } from 'framer-motion';
 import { Flame, Plus } from 'lucide-react';
 import { formatNaira } from '@/lib/hgUtils';

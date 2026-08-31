@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link } from '@/lib/navigation';
 import { Flame, Mail, ArrowRight, Check, ArrowLeft } from 'lucide-react';
 import { mockApi } from '@/lib/mockApi';
 

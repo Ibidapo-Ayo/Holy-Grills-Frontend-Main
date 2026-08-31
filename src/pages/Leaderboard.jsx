@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Crown, Flame, Users, Award, TrendingUp, ArrowUp, ArrowDown, Minus, Clock } from 'lucide-react';
 import { mockApi } from '@/lib/mockApi';

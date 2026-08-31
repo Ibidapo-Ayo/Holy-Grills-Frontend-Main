@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link } from '@/lib/navigation';
 import { Flame, ArrowRight, Mail, Lock, User, Phone, Calendar, Gift, ChevronDown, AlertCircle, Eye, EyeOff, BookOpen, GraduationCap } from 'lucide-react';
 import { useHolyGrill } from '@/lib/HolyGrillContext';
 import { mockApi } from '@/lib/mockApi';

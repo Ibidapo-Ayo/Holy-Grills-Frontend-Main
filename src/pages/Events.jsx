@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@/lib/navigation';
 import { Calendar, MapPin, Flame, Plus, ChevronRight } from 'lucide-react';
 import { mockApi } from '@/lib/mockApi';
 import { formatDateTime, formatNaira } from '@/lib/hgUtils';

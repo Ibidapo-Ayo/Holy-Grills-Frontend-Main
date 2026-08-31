@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Navigate } from 'react-router-dom';
+import { useNavigate, Navigate } from '@/lib/navigation';
 import { motion } from 'framer-motion';
 import { Bike, Check, Clock } from 'lucide-react';
 import { liveApi as mockApi } from '@/lib/liveApi';

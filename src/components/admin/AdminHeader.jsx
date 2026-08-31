@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { Menu, Flame, ExternalLink, LogOut, UtensilsCrossed, Bike } from 'lucide-react';
 import AdminGlobalSearch from '@/components/admin/AdminGlobalSearch';
 

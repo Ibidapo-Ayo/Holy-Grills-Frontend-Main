@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@/lib/navigation';
 import { Lock, Clock, Flame, X, Check, Calendar, RefreshCw, Gift, ChevronRight, AlertCircle } from 'lucide-react';
 import { mockApi } from '@/lib/mockApi';
 import { getSetting } from '@/lib/featureConfig';

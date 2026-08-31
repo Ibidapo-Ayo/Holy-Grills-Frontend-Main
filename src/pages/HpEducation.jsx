@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { Flame, Gift, TrendingUp, Calendar, Star, Lock, ChevronRight, HelpCircle, Send } from 'lucide-react';
 import { useHolyGrill } from '@/lib/HolyGrillContext';
 import { isFeatureEnabled } from '@/lib/featureConfig';

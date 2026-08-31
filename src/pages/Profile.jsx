@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from '@/lib/navigation';
 import { User, Phone, Mail, Calendar, Lock, Bell, LogOut, ChevronRight, Shield, Trash2, Flame, MapPin as MapPinIcon, Wallet as WalletIcon, Volume2, VolumeX, LayoutDashboard, ChefHat, Bike, Store, CalendarDays, Sparkles, Crown, GraduationCap, BookOpen, X } from 'lucide-react';
 import { useHolyGrill } from '@/lib/HolyGrillContext';
 import { mockApi } from '@/lib/mockApi';

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate } from '@/lib/navigation';
 import { Calendar, Package, Zap, Check } from 'lucide-react';
 import { liveApi as mockApi } from '@/lib/liveApi';
 import { isAuthenticated } from '@/lib/apiClient';

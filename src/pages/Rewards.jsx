@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Flame, Lock, Gift, Award, Target, X, History, GraduationCap, Sparkles, Crown, Zap, Clock, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/navigation';
 import { mockApi } from '@/lib/mockApi';
 import { useHolyGrill } from '@/lib/HolyGrillContext';
 import { getTierProgress } from '@/lib/hgUtils';

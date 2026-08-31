@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@/lib/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Clock, Calendar } from 'lucide-react';
 import { formatTime } from '@/lib/hgUtils';

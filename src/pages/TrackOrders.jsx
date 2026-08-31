@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from '@/lib/navigation';
 import { ChevronLeft, Check, Flame, Package, Clock, AlertCircle } from 'lucide-react';
 import { mockApi } from '@/lib/mockApi';
 import { isAuthenticated } from '@/lib/apiClient';
