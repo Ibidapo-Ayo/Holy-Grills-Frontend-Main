@@ -21,7 +21,7 @@ npx skills add base44/skills
 
 - `src/`: frontend application source.
 - `src/api/base44Client.js`: frontend Base44 SDK client.
-- `vite.config.js`: Vite config and Base44 Vite plugin setup.
+- `next.config.mjs`: Next.js runtime and routing configuration.
 - `.env.local`: local-only environment values; never commit secrets.
 
 ## Working Notes

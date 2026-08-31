@@ -7,7 +7,7 @@
      • Navigation requests         → network-first, fall back to cache/offline
      • Images                      → stale-while-revalidate
    Update flow: a new SW installs → notifies client → client posts
-   SKIP_WAITING → new SW activates → client reloads (handled in main.jsx).
+   SKIP_WAITING → new SW activates → client reloads (handled in ServiceWorkerRegistration.jsx).
    ========================================================================== */
 
 // OneSignal push support — harmless if OneSignal isn't configured.

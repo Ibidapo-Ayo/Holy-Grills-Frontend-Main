@@ -2,8 +2,8 @@
 
 > **Every builder (AI or human) working on this app MUST read this file first.**
 > These are constants — they apply to every new page, component, and refactor.
-> The frontend stack is **React + Vite (SPA)**, not Next.js. SSR/SSG is not
-> available; SEO is handled client-side via meta management + structured data.
+> The frontend stack is **Next.js + React (SPA-style client routing layer)**.
+> Primary page rendering is client-side; SEO uses global metadata + per-page meta management.
 
 ---
 
@@ -30,7 +30,7 @@ size is always an `ICON_SIZES` value, never an arbitrary pixel number.
 ## 2. PWA — Every Page Is a PWA Page
 
 The service worker (`public/service-worker.js`) is registered globally in
-`src/main.jsx` and caches the app shell + runtime assets. **You do not need to
+`src/components/ServiceWorkerRegistration.jsx` and caches the app shell + runtime assets. **You do not need to
 do anything per-page for caching** — but:
 
 - **New static assets** referenced at app load (fonts, critical images) should
@@ -38,7 +38,7 @@ do anything per-page for caching** — but:
   offline.
 - **Offline fallback** is `public/offline.html`. Keep it self-contained.
 - **Update flow** is automatic: a new SW installs → client reloads. Don't
-  build custom update UI without coordinating with `main.jsx`.
+  build custom update UI without coordinating with `ServiceWorkerRegistration.jsx`.
 - **Install prompt** is global (`src/components/InstallPrompt.jsx`, rendered in
   `App.jsx`). Don't add a second install banner.
 - **manifest.json** lives in `public/`. App shortcuts (Order, HP, Events) are
@@ -48,7 +48,7 @@ do anything per-page for caching** — but:
   `icons` array. SVG icons are present now (Chrome installable); PNGs are needed
   for full Lighthouse + iOS home-screen parity.
 - **iOS splash screen (pre-launch task):** add `apple-touch-startup-image` links
-  to `index.html` for each iOS device size once a splash PNG exists.
+  in `pages/_document.page.jsx` for each iOS device size once a splash PNG exists.
 
 ---
 
@@ -71,10 +71,10 @@ export default function Menu() {
 
 - Defaults (title, description, OG/Twitter) come from `APP_CONFIG.seo` — only
   override what's specific to the page.
-- `index.html` holds the global defaults + JSON-LD restaurant schema. Don't
+- `pages/_document.page.jsx` holds the global defaults + JSON-LD restaurant schema. Don't
   duplicate OG tags statically in `index.html` for per-page content — use `<SEO />`.
 - For share images, pass an absolute `image` URL.
-- Because this is a SPA, social crawlers see `index.html` defaults; per-route
+- Because this is a SPA, social crawlers see global defaults; per-route
   meta updates for in-app sharing and Google's JS crawler.
 
 ---
